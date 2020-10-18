@@ -17,22 +17,26 @@ public class Triangle {
         if (a > 0 && b > 0 && c > 0)
         {
          if (a+b>c && a+c>b && b+c>a)
-         {
-          System.out.println("Area: " + area);
-          if (a==b && b==c && c==a)
           {
+           System.out.println("Area: " + area);
+           if (a==b && b==c && c==a)
+           {
             System.out.println("Triangle: equilateral");
-          }
-          else if (a==b || c==a || b==c)
-          {
+           }
+           else if (a==b || c==a || b==c)
+           {
             System.out.println("Triangle: isosceles");
+           }
+           else
+           {
+            System.out.println("Triangle: scalene");
+           }
           }
           else
           {
-            System.out.println("Triangle: scalene");
+            System.out.println("Values are not correct!");
           }
-         }
-        }
+        }  
         
         else
         {
