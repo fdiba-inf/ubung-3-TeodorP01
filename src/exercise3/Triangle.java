@@ -7,14 +7,16 @@ public class Triangle {
 
     public static void main(String[] args) {
       
-      Scanner input = new Scanner(System.in);
+      Scanner input1 = new Scanner(System.in);
+      Scanner input2 = new Scanner(System.in);
+      Scanner input3 = new Scanner(System.in);
         
-        int a = input.nextInt();
-        int b = input.nextInt();
-        int c = input.nextInt();
+        double a = input1.nextInt();
+        double b = input2.nextInt();
+        double c = input3.nextInt();
 
-        double s = (a+b+c)/2;
-        double area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+        double p = ((a+b+c)/2);
+        double area = Math.sqrt(p*(p-a)*(p-b)*(p-c));
         
           if (a > 0 && b > 0 && c > 0)
            {
