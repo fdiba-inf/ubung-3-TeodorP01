@@ -6,12 +6,18 @@ import java.lang.*;
 public class Triangle {
 
     public static void main(String[] args) {
-      
+
+      double a;
+      double b;
+      double c;
+
+
+      do{
       Scanner input = new Scanner(System.in);
         
-        double a = input.nextInt();
-        double b = input.nextInt();
-        double c = input.nextInt();
+        a = input.nextInt();
+        b = input.nextInt();
+        c = input.nextInt();
 
         double p = ((a+b+c)/2);
         double area = Math.sqrt(p*(p-a)*(p-b)*(p-c));
@@ -44,6 +50,7 @@ public class Triangle {
            {
              System.out.println("Values are not correct!");
            }
+      }while (a>0 && b>0 && c>0);
         
       
 
